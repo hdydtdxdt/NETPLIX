@@ -1,0 +1,47 @@
+.movie-title {
+    font-weight: 700;
+}
+
+.like-button {
+    background-color: #1187CF;
+    color: white;
+}
+
+.like-button:hover {
+    color: lightgray;
+}
+
+.like-number-span {
+    background-color: white;
+    color: #1187CF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.preview-button {
+    background-color: darkgray;
+    color: white;
+}
+
+.preview-button:hover {
+    color: lightgray;
+}
+
+.navbar-custom {
+    background-color: white;
+}
+
+.nav-link {
+    color: dimgray !important;
+}
+
+.nav-menu {
+    font-size: larger;
+    color: #1187CF !important;
+}
+
+.subtitle {
+    font-weight: 100;
+}

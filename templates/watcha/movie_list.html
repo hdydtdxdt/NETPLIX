@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-3">
+    <h1 class="subtitle mt-4 mb-5">탐색하기</h1>
+    {% for movie in movie_list %}
+    <a id="movie_{{ movie.id }}"></a>
+        <h2 class="border-bottom py-2 movie-title">{{ movie.title }}</h2>
+        <div class="card my-3">
+            <div class="card-body">
+                <div class="card-text" style="white-space: pre-line;">{{ movie.story }}</div>
+                <div class="mt-5">
+                    <a href="{% url 'watcha:movie_vote' movie.id  %}" class="recommend btn btn-sm like-button">Like
+                        <span class="badge rounded-pill like-number-span">{{movie.voter.count}}</span>
+                    </a>
+                    <a href="{{ movie.url}} " class="btn btn-sm preview-button float-end">예고편</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock%}
+

@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="shortcut icon" href="../../static/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../static/favicon.ico" type="image/x-icon">
+    <title>NETPLIX</title>
+</head>
+<body>
+<!-- 기본 템플릿 안에 삽입될 내용 End -->
+{% include "navbar.html" %}
+<!-- 기본 템플릿 안에 삽입될 내용 Start -->
+{% block content %}
+{% endblock %}
+</body>
+</html>
