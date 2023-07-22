@@ -10,12 +10,12 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-data = pd.read_csv('./resources/data.csv', encoding='cp949')
+data = pd.read_csv('home/hdydtdxdt/NETPLIX/resources/data.csv', encoding='cp949')
 first = int(len(data) / 3)
 second = int(len(data) / 3 * 2)
 third = int(len(data))
 stopwords = []
-stopwords_path = './resources/stopwords.txt'
+stopwords_path = 'home/hdydtdxdt/NETPLIX/resources/stopwords.txt'
 
 with open(stopwords_path, 'r', encoding='utf-8') as stopwords_file:
     line = stopwords_file.readline()
